@@ -23,6 +23,9 @@ h5,
 h6 {
   margin: 0;
 }
+p {
+  margin: 0;
+}
 h2 {
   font-weight: 400;
   font-size: 40px;
@@ -80,24 +83,20 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #000000;
-  // background-image: url('./assets/img/logo.png');
-  // background-size: contain;
-  // background-repeat: no-repeat;
-}
-.subtitle {
-  line-height: 175%;
 }
 .menu__item {
 }
 //------------------------ WELCOME
 .welcome {
   &__container {
-    padding: 16px 0 109px;
+    padding: 62px 0 47px;
     display: flex;
     justify-content: space-between;
   }
 
   &__content {
+    padding-top: 36px;
+    width: 550px;
   }
 
   &__title {
@@ -115,10 +114,13 @@ body {
   background: #fff;
   &__container {
     display: flex;
-    padding: 82px 0 105px;
+    justify-content: space-between;
+    padding: 93px 0 94px;
   }
 
   &__content {
+    padding: 68px 0 61px;
+    width: 605px;
   }
 
   &__title {
@@ -128,9 +130,17 @@ body {
   &__img {
   }
 }
-
-.subtitle {
+.about__subtitle {
+  padding-top: 40px;
+  line-height: 1.5;
 }
+.welcome__subtitle {
+  font-size: 20px;
+  padding-top: 42px;
+  width: 525px;
+  line-height: 1.75;
+}
+
 //------------------------ SERVICE
 .service {
   &__container {
@@ -140,7 +150,7 @@ body {
   &__content {
     display: flex;
     align-items: center;
-    margin-bottom: 97px;
+    margin-bottom: 81px;
   }
 
   &__title {
