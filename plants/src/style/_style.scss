@@ -39,10 +39,14 @@ body {
   font-size: 20px;
   color: #717171;
 }
+$tablet: 768px;
 .container {
   max-width: 1222px;
   margin: 0 auto;
   padding: 0 15px;
+  @media (max-width: $tablet) {
+    max-width: 668px;
+  }
 }
 #app {
   background-color: #edf2ec;
@@ -53,6 +57,9 @@ body {
     padding: 42px 0 42px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $tablet) {
+      padding: 35px 0 35px;
+    }
   }
 
   &__nav {
@@ -92,6 +99,9 @@ body {
     padding: 62px 0 47px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $tablet) {
+      padding: 40px 0 70px;
+    }
   }
 
   &__content {
@@ -103,6 +113,22 @@ body {
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
+    @media (max-width: $tablet) {
+      font-size: 35px;
+    }
+  }
+  &__subtitle {
+    font-size: 15px;
+    padding-top: 42px;
+    width: 341px;
+    line-height: 1.56;
+  }
+  &__img {
+    @media (max-width: $tablet) {
+      width: 280px;
+      height: 254px;
+      order: 1;
+    }
   }
 }
 .colored {
@@ -116,46 +142,66 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 93px 0 94px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0 95px;
+    }
   }
 
   &__content {
     padding: 68px 0 61px;
     width: 605px;
+    @media (max-width: $tablet) {
+      padding: 0 0 40px;
+    }
   }
 
   &__title {
     font-family: 'Inika';
+    @media (max-width: $tablet) {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    padding-top: 40px;
+    line-height: 1.5;
   }
 
   &__img {
+    @media (max-width: $tablet) {
+      width: 250px;
+      height: 258px;
+    }
   }
 }
-.about__subtitle {
-  padding-top: 40px;
-  line-height: 1.5;
-}
-.welcome__subtitle {
-  font-size: 20px;
-  padding-top: 42px;
-  width: 525px;
-  line-height: 1.75;
-}
-
 //------------------------ SERVICE
 .service {
   &__container {
     padding: 35px 0 64px;
+    @media (max-width: $tablet) {
+      padding: 60px 0 70px;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
     margin-bottom: 81px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
     margin-right: 142px;
     font-family: 'Inika';
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__options {
@@ -181,6 +227,11 @@ body {
 .grid-3-column {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  @media (max-width: $tablet) {
+    height: 1426px;
+  }
 }
 .card {
   width: 330px;
@@ -198,8 +249,12 @@ body {
   &__details {
     padding: 10px 0 36px;
     text-align: center;
+    @media (max-width: $tablet) {
+      padding: 10px 0 20px;
+    }
   }
   &__img {
+    width: 100%;
   }
 
   &__title {
@@ -210,6 +265,14 @@ body {
   }
 
   &__desc {
+    @media (max-width: $tablet) {
+      width: 201px;
+      margin: auto;
+    }
+  }
+  @media (max-width: $tablet) {
+    width: 280px;
+    margin: 0;
   }
 }
 //------------------------ PRICES
@@ -225,6 +288,9 @@ body {
     display: flex;
     justify-content: space-between;
     font-family: 'Inter';
+    @media (max-width: $tablet) {
+      padding: 40px 0 88px;
+    }
   }
 
   &__content {
@@ -235,6 +301,9 @@ body {
     font-weight: 700;
     line-height: 1.2;
     padding-bottom: 60px;
+    @media (max-width: $tablet) {
+      font-size: 35px;
+    }
   }
 
   &__options {
@@ -281,6 +350,10 @@ body {
     color: #000;
     line-height: 1.25;
     text-align: right;
+    @media (max-width: $tablet) {
+      font-size: 25px;
+      line-height: 1.4;
+    }
   }
 
   &__img {
@@ -295,6 +368,11 @@ body {
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $tablet) {
+      padding-top: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -303,7 +381,12 @@ body {
     line-height: 1.3;
   }
 }
-
+.woman {
+  @media (max-width: $tablet) {
+    width: 200px;
+    order: 2;
+  }
+}
 .accordion {
   margin-top: 88px;
   padding: 0 20px 0;
@@ -318,6 +401,10 @@ body {
   }
 
   &__btn {
+  }
+  @media (max-width: $tablet) {
+    margin-top: 100px;
+    margin-bottom: 250px;
   }
 }
 
@@ -372,6 +459,10 @@ body {
     align-items: center;
     color: #000;
     line-height: 2.5;
+    @media (max-width: $tablet) {
+      padding: 32.5px 0 18px;
+			flex-direction: column;
+    }
   }
 }
 
