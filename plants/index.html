@@ -102,13 +102,13 @@
                 projects
               </h2>
               <div class="service__options">
-                <button class="btn">Gardens</button>
-                <button class="btn">Lawn</button>
-                <button class="btn">Planting</button>
+                <button class="btn btn_service" id="garden">Gardens</button>
+                <button class="btn btn_service" id="lawn">Lawn</button>
+                <button class="btn btn_service" id="planting">Planting</button>
               </div>
             </div>
             <div class="grid-3-column">
-              <div class="card">
+              <div class="card garden">
                 <img
                   class="card__img"
                   src="./src/assets/img/service/1.png"
@@ -119,7 +119,7 @@
                   <h5 class="card__desc">Lorem Ipsum has been the industry</h5>
                 </div>
               </div>
-              <div class="card">
+              <div class="card planting">
                 <img
                   class="card__img"
                   src="./src/assets/img/service/2.png"
@@ -130,7 +130,7 @@
                   <h5 class="card__desc">Lorem Ipsum has been the industry</h5>
                 </div>
               </div>
-              <div class="card">
+              <div class="card lawn">
                 <img
                   class="card__img"
                   src="./src/assets/img/service/3.png"
@@ -141,7 +141,7 @@
                   <h5 class="card__desc">Lorem Ipsum has been the industry</h5>
                 </div>
               </div>
-              <div class="card">
+              <div class="card planting">
                 <img
                   class="card__img"
                   src="./src/assets/img/service/4.png"
@@ -152,7 +152,7 @@
                   <h5 class="card__desc">Lorem Ipsum has been the industry</h5>
                 </div>
               </div>
-              <div class="card">
+              <div class="card garden">
                 <img
                   class="card__img"
                   src="./src/assets/img/service/5.png"
@@ -163,7 +163,7 @@
                   <h5 class="card__desc">Lorem Ipsum has been the industry</h5>
                 </div>
               </div>
-              <div class="card">
+              <div class="card planting">
                 <img
                   class="card__img"
                   src="./src/assets/img/service/6.png"
@@ -182,27 +182,65 @@
             <div class="prices__content">
               <h2 class="prices__title" id="price">Prices</h2>
               <div class="prices__options">
-                <div class="prices__option">
-                  <div class="prices__item">
-                    <span class="prices__item-name">Basics</span>
-                    <img
-                      src="./src/assets/img/marker.png"
-                      class="accordion__btn"
-                    />
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-item-closed">
+                      <button class="accordion-btn">Basics</button>
+                      <img
+                        src="./src/assets/img/marker.png"
+                        class="accordion__btn"
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p class="accordion-item-desc">
+                        Release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently
+                      </p>
+                      <p class="service-price">
+                        <span class="active">$15</span> / per hour
+                      </p>
+                      <a href="#contacts" class="order-button">Order</a>
+                    </div>
                   </div>
-                  <div class="prices__item">
-                    <span class="prices__item-name">Standard</span>
-                    <img
-                      src="./src/assets/img/marker.png"
-                      class="accordion__btn"
-                    />
+
+                  <div class="accordion-item">
+                    <div class="accordion-item-closed">
+                      <button class="accordion-btn">Standard</button>
+                      <img
+                        src="./src/assets/img/marker.png"
+                        class="accordion__btn"
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p class="accordion-item-desc">
+                        Release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently
+                      </p>
+                      <p class="service-price">
+                        <span class="active">$25</span> / per hour
+                      </p>
+                      <a href="#contacts" class="order-button">Order</a>
+                    </div>
                   </div>
-                  <div class="prices__item">
-                    <span class="prices__item-name">Pro care</span>
-                    <img
-                      src="./src/assets/img/marker.png"
-                      class="accordion__btn"
-                    />
+
+                  <div class="accordion-item">
+                    <div class="accordion-item-closed">
+                      <button class="accordion-btn">Pro care</button>
+                      <img
+                        src="./src/assets/img/marker.png"
+                        class="accordion__btn"
+                      />
+                    </div>
+                    <div class="accordion-content">
+                      <p class="accordion-item-desc">
+                        Release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently
+                      </p>
+                      <p class="service-price">
+                        <span class="active">$35</span> / per hour
+                      </p>
+                      <a href="#contacts" class="order-button">Order</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -229,9 +267,23 @@
               class="woman"
             />
             <h2 class="contacts__title" id="contacts">Contact us</h2>
-            <div class="accordion">
-              <p class="accordion__text">City</p>
-              <img src="./src/assets/img/marker.png" class="accordion__btn" />
+            <div class="contacts-select">
+              <div class="city-select">
+                <div class="select-placeholder">
+                  <p>City</p>
+                  <img
+                    src="./src/assets/img/marker.png"
+                    class="city-select-btn"
+                  />
+                </div>
+                <div class="select-content">
+                  <button class="select-option" id="1">Canandaigua, NY</button>
+                  <button class="select-option" id="2">New York City</button>
+                  <button class="select-option" id="3">Yonkers, NY</button>
+                  <button class="select-option" id="4">Sherrill, NY</button>
+                </div>
+              </div>
+              <div id="city-card"></div>
             </div>
           </div>
         </section>
