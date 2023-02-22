@@ -447,6 +447,7 @@ $mobile: 380px;
     }
   }
 }
+
 .accordion {
   display: flex;
   flex-direction: column;
@@ -460,8 +461,12 @@ $mobile: 380px;
     padding: 16px 40px 0 16px;
     background: #edf2ec;
     border-radius: 20px;
+    transition: 0.3s all linear;
     @media (max-width: $mobile) {
       margin-bottom: 14px;
+    }
+    &.green {
+      background: #d6e7d2;
     }
     &:last-child {
       margin: 0;
@@ -488,8 +493,11 @@ $mobile: 380px;
     cursor: pointer;
     transition: 0.4s;
   }
-  &__btn.open {
-    transform: rotate(180deg);
+  &__btn {
+    transition: 0.3s;
+    &.open {
+      transform: rotate(180deg);
+    }
   }
   &-content {
     display: none;
@@ -636,6 +644,7 @@ $mobile: 380px;
   }
 }
 .city-select-btn {
+  transition: 0.3s;
   &.open {
     transform: rotate(180deg);
   }

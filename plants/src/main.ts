@@ -76,6 +76,7 @@ for (let i = 0; i < accordionButtons.length; i++) {
         dropDownButtons[j].classList.remove('open');
       }
     }
+    document.querySelectorAll('.accordion-item')[i].classList.toggle('green');
     accordionContents[i].classList.toggle('show');
     dropDownButtons[i].classList.toggle('open');
   });
